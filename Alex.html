@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QR Page</title>
+
+<style>
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:flex-end;
+align-items:center;
+font-family:Arial, sans-serif;
+
+/* фон */
+background-image:url("image.jpg");
+background-size:contain;
+background-position:center;
+background-repeat:no-repeat;
+background-color:black;
+}
+
+/* затемнение */
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.25);
+z-index:0;
+}
+
+/* контейнер кнопки */
+.button-container{
+position:relative;
+z-index:1;
+width:100%;
+display:flex;
+justify-content:center;
+padding-bottom:40px;
+}
+
+/* кнопка */
+.button{
+padding:13px 30px;
+font-size:18px;
+background:#06817b;
+color:rgb(186, 255, 255);
+border:none;
+border-radius:12px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 6px 20px rgba(1, 44, 27, 0.4);
+transition:0.2s;
+}
+
+.button:active{
+transform:scale(0.80);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<div class="button-container">
+<a class="button" href="https://www.instagram.com/w_y_s_o_c_k_i?igsh=dXNxb2tsYnRoZWY1">
+OnlyFans
+</a>
+</div>
+
+</body>
+</html>
