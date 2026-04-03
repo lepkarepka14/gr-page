@@ -35,6 +35,16 @@ background:rgba(0,0,0,0.25);
 z-index:0;
 }
 
+/* контейнер плеера наверху */
+.audio-container {
+position:absolute;
+top:15px; /* отступ от верхнего края */
+width:100%;
+display:flex;
+justify-content:center; /* центрируем плеер */
+z-index:2; /* чтобы плеер был поверх затемнения */
+}
+
 /* контейнер кнопки */
 .button-container{
 position:relative;
@@ -70,10 +80,12 @@ transform:scale(0.80);
 
 <div class="overlay"></div>
 
-<audio autoplay loop controls>
-  <source src="music.mp3" type="audio/mpeg">
-  Ваш браузер не поддерживает элемент audio.
-</audio>
+<div class="audio-container">
+  <audio autoplay loop controls>
+    <source src="music.mp3" type="audio/mpeg">
+    Ваш браузер не поддерживает элемент audio.
+  </audio>
+</div>
 
 <div class="button-container">
 <a class="button" href="https://www.instagram.com/w_y_s_o_c_k_i?igsh=dXNxb2tsYnRoZWY1">
